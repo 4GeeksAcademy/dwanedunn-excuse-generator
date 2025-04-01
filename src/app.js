@@ -6,6 +6,7 @@ import './assets/img/4geeks.ico';
 
 window.onload = function () {
   //write your code here
+  GenerateExcuse();
   console.log('Hello Rigo from the console!');
 };
 
@@ -28,3 +29,6 @@ function GenerateExcuse() {
 
   return `${who[whoIndex]} ${action[actionIndex]} ${what[whatIndex]} ${when[whenIndex]}`;
 }
+
+const excuse = document.querySelector('#excuse');
+excuse.innerHTML = `${who[whoIndex]} ${action[actionIndex]} ${what[whatIndex]} ${when[whenIndex]}`;
