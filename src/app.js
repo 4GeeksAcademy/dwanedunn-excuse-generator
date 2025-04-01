@@ -28,7 +28,9 @@ function GenerateExcuse() {
   let whenIndex = Math.floor(Math.random() * when.length);
 
   return `${who[whoIndex]} ${action[actionIndex]} ${what[whatIndex]} ${when[whenIndex]}`;
+
+  const excuse = document.querySelector('#excuse');
+excuse.innerHTML = `${who[whoIndex]} ${action[actionIndex]} ${what[whatIndex]} ${when[whenIndex]}`;
 }
 
-const excuse = document.querySelector('#excuse');
-excuse.innerHTML = `${who[whoIndex]} ${action[actionIndex]} ${what[whatIndex]} ${when[whenIndex]}`;
+
