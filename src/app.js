@@ -7,7 +7,8 @@ import './assets/img/4geeks.ico';
 window.onload = function () {
   
   // console.log('Hello Rigo from the console!');
-  document.querySelector(".alert").innerHTML = GenerateExcuse();
+  let excuses = GenerateExcuse();
+  document.querySelector(".alert").innerHTML = excuses;
 };
 
 function GenerateExcuse() {
