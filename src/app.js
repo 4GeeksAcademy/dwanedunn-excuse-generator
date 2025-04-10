@@ -5,8 +5,9 @@ import './assets/img/rigo-baby.jpg';
 import './assets/img/4geeks.ico';
 
 window.onload = function () {
-  GenerateExcuse();
-  console.log('Hello Rigo from the console!');
+  
+  // console.log('Hello Rigo from the console!');
+  document.querySelector(".alert").innerHTML = GenerateExcuse();
 };
 
 function GenerateExcuse() {
