@@ -5,10 +5,11 @@ import './assets/img/rigo-baby.jpg';
 import './assets/img/4geeks.ico';
 
 window.onload = function () {
-  
   // console.log('Hello Rigo from the console!');
   let excuses = GenerateExcuse();
-  document.querySelector(".alert").innerHTML = excuses;
+  let excuseDisplay = document.querySelector(".alert");
+  excuseDisplay.innerHTML = excuses;
+ 
 };
 
 function GenerateExcuse() {
@@ -30,3 +31,5 @@ function GenerateExcuse() {
 
   return `${who[whoIndex]} ${action[actionIndex]} ${what[whatIndex]} ${when[whenIndex]}`;
 }
+
+
